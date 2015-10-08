@@ -1,0 +1,16 @@
+Question:
+What happens when you initialize a repository? Why do you need to do it.
+
+Antwort:
+git init legt in dem Verzeichnis in dem man sich Befindet ein verstecktes Verzeichnis an .git/
+in diesem Verzeichnis legt git alle Informationen über den Zustand der Dateien dem aktuellen Verzeichnis ab. Git erzeugt beim Anlegen des Verzeichnisse keinen Schnapschuss der Dateien in dem Verzeichnis. Um Dateien in das git repository aufzunehmen muss ein Commit manuell angestoßen werden. Dies geschieht damit der Benutzer eine Commitnachricht anlegen muss.
+
+Question:
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Antwort:
+Im Working directory befinden sich die Dateien an denen ich tatsächlich arbeite. Im Repository befindet sich (getesteter) funktionierender Code. In Staging Area stelle ich die Daten, die neu ins Repository einchecken will. Das Staging Area versetzt mich z.B. in die Lage, ganz gezielt nur die Dateien ins Repository zu commiten von denen ich sicher bin, dass sie funktionieren. Andere Daten an denen ich noch arbeite können weiter im Working Directory bleiben und müssen nicht commited werden.
+Das Staging Area verstzt mich mit dem Befehl git add --patch sogar in die Lage nur einzelne Blöcke (Hunks in Git Terminologie) in mein Repository einzuchecken und andere Teile auszulassen.
+
+
+http://udacity.github.io/git-styleguide/
