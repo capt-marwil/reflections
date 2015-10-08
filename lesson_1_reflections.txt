@@ -10,7 +10,8 @@ The plus symbol meaning the the line wasn't there in the first file.
 It's a very quick way to spot the difference between to lines of code as they are 
 grouped together with linenumber.
 
-Question: How could having easy access tho the entire history of a file make you 
+Question:
+How could having easy access tho the entire history of a file make you 
 a more efficient programmer in the long term?
 
 Answer:
@@ -45,3 +46,7 @@ Now that you have your workspace set up, what do you want to try using Git for?
 
 Answer:
 I'd like to try it for my Movies Website Project
+
+
+
+
