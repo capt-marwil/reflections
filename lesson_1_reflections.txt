@@ -1,0 +1,47 @@
+Question:
+How did viewing the diff between two versions of a file help you see the bug that was introduced.
+
+Answer:
+Using the command diff -u firstfile_name secondfile_name
+Lines that changed from one version to the other are marked with either "-" or "+"
+The first symbol meaning that the line was present in the first version of the file and removed in the second file 
+The plus symbol meaning the the line wasn't there in the first file.
+
+It's a very quick way to spot the difference between to lines of code as they are 
+grouped together with linenumber.
+
+Question: How could having easy access tho the entire history of a file make you 
+a more efficient programmer in the long term?
+
+Answer:
+Being able to see all the versions helps me to keep track of how my programm evolves and to try out new solutions in small steps without having to relie on commenting out code that is 
+temporarily not needed.
+My files end up much tidier than without version control.
+
+Question: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Answer:
+Manuelles Speichern ermöglicht es logisch zusammengehörige Code zu speichern, so dass man immer lauffähigen Code speichert. Beim Automatischen Speichern ist es schwierig Regeln zu finden nach denen garantiert ist, dass nur lauffähiger Code gespeichert wird. 
+Ein Nachteil der Manuellen Speicherung ist, dass der Entwickler stets selbst entscheiden muss, ob er einen Commit durchführt oder nicht. Ist der Entwickler schlampig sind die Commits evtl zu groß und damit unübersichtlich und unbrauchbar. Sind die Commits zu klein und zu häufig, ist es schwierig die wichtigen von den unwichtigen Änderungen zu unterscheiden.
+
+
+Question:
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Antwort:
+Google Docs richtet sich an Benutzer, die in der Regel nur an einer Dateit (Text, Spreadsheet) arbeiten. Änderungen beziehen sich immer nur auf diese eine Datei.
+Versions ControllSysteme wie Git sind speziell auf die Bedürfnisse von Software Entwicklern zugeschnitten und in der Lage Änderungen in mehreren Dateien gleichzeitig nachzuhalten, da es bei den meisten Projekten nötig ist mehr als eine Datei zu ändern, wenn man Code schreibt. Im Fall von Webseiten z.B. HTML für die Struktru, CSS für das Aussehen und Javascript für das Verhalten. Änderungen an einer der Komponenten ziehen meisten Änderungen an den beiden anderen Komponenten nach sich.
+
+
+Question:
+How can you use the commands git log and git diff to view the history of files?
+
+Antwort:
+git log zeigt alle Änderungen in einen Repository an. Git diff NameErsteDatei NameZweiteDatei gibt die Änderungen zwischen den beiden Dateien aus. Neben der Kennzeichnung mit + und -, die der Ausgabe des Kommandozeilen Programms diff entsprechen, ist die Ausgabe von git diff zusätzlich farbcodiert. Entfernte Zeilen sind rot eingefärbt, hinzugefügt grün und unveränderte sind schwarz.
+Ein schneller weg um sich die Anzahl der Änderungen zwischen zwei Commits anzeigen zu lassen ist die Erweiterung von git log mit dem Parameter --stat. Dann werden über rote - und grüne + Zeichen die Anzahl der Unteschiede schon in der Übesicht angezeigt. 
+
+Question:
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Answer:
+I'd like to try it for my Movies Website Project
