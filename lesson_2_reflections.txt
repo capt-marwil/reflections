@@ -14,3 +14,39 @@ Das Staging Area verstzt mich mit dem Befehl git add --patch sogar in die Lage n
 
 
 http://udacity.github.io/git-styleguide/
+
+git diff Vergleicht Working directory mit staging area
+git diff --staged vergleicht staging area mit letztem commit im repository
+git diff idcommit1 idcommit2 vergleicht die beiden bezeichenten commits im repository
+
+
+Neue git befehl
+git branch zeigt alle vorhandenen Entwicklungszweige an
+git branch <NameDesZweigs> erzeugt einen neuen Entwicklungszweig
+git checkout <NameDesZweigs> wechselt in den neuen Entwicklungszweig.
+Hier kann jetzt wie gewohnt bearbeitet werden.
+git commit <Dateiname(n)> pflegt die Änderungen wieder in die Versionsverwaltung ein.
+
+Question:
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Antwort:
+Branches sind zum einen hilfreich, wenn man Änderungen in Code einführen will, die über den normalen Pflegebedarf (Bugfixing, überarbeiten der vorhandenen Funktionen hinausgeht). Z.B. Einbau eines komplett neuen Moduls, Änderungen in der Geschäftslogik. Dann ermöglicht es der neue Branch diese Änderungen auszuprobiern während der Zweig mit dem Produktionscode weitgehend unverändert bleibt.
+Ein weiteres Umfeld in dem man ohne mehrere Entwicklungszweige gar nicht auskommt sind Entwicklerteams. Hier kann sich jeder Entwickler einen eingenen Entwicklungszweig erstellen und seine Änderungen nach Fertigstellung wieder in den Hauptzweig zurück pflegen.
+
+
+git log --graph --oneline master coins
+
+git commit -b <NameDesNeuenZweiges>
+
+Question:
+How do the diagrams help you visualize the branch structure?
+
+Antwort:
+Das Visualisieren der Baumstruktur hilft mir zu verstehen wie meine Zweige miteinander zusammenhängen und welcher Zweig, welches Feature enthält. Außerdem kann ich so besser verstehen auf welchen Stand ich aus einem bestimmten Zweig wieder zurück gehen kann.
+
+Question:
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Antwort:
+Als Ergebnis erhält man einen neuen Zweig in dem die Änderungen aus beiden Zweigen enthalten sind. Die Darstellung soll deutlich machen, das sich die beiden Zweige auf unterschiedlichen Bahnen entwickeln und unterschiedlich viele Commits enthalten am Ende aber wieder in einem Zweig zusammengeführt werden.
