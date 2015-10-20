@@ -1,0 +1,6 @@
+Question:
+When would you want to use a remote repository rather than keeping all your work local?
+
+Answer:
+I'm using more than one machine to work on the same project: One at my office, one at home and a laptop when travelling.
+I'm working in a developer team or project with multi developers all of whom commit to the code.
